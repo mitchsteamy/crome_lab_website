@@ -1,0 +1,111 @@
+/* src/components/Header/Header.module.css */
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  padding: 140px 0;
+  background-image: 
+    linear-gradient(90deg, #061336 0%, #061336 20%, rgba(6, 19, 54, 0.8) 40%, rgba(6, 19, 54, 0.4) 80%, transparent 100%),
+    url('/images/families_background.png');
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.logoContainer {
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.tagline {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  max-width: 600px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navList li a:hover {
+  color: #f78b33;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: #f78b33;
+  text-shadow: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    min-height: 250px;
+    background-image: 
+      linear-gradient(90deg, #061336 0%, #061336 50%, rgba(6, 19, 54, 0.9) 70%, rgba(6, 19, 54, 0.6) 90%, transparent 100%),
+      url('/images/neighborhood.png');
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .navList {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .navList li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  
+  .tagline {
+    font-size: 16px;
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  
+  .logo {
+    max-width: 300px;
+  }
+}

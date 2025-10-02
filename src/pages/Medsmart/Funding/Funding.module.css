@@ -1,0 +1,56 @@
+/* src/components/Funding/Funding.module.css */
+.funding {
+  padding: 40px 0;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.fundingInfo {
+  margin-bottom: 40px;
+}
+
+.fundingInfo p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+  text-align: justify;
+}
+
+.topLink {
+  display: inline-block;
+  color: #f78b33;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.topLink:hover {
+  color: #f78b33;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .fundingInfo {
+    padding: 20px;
+  }
+  
+  .fundingInfo p {
+    text-align: left;
+  }
+}
