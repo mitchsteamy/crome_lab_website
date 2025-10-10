@@ -25,6 +25,33 @@ export default function Home() {
             Developing novel methods for improving medication safety and health behaviors
             for vulnerable and underserved populations
           </p>
+          <nav className={styles.navigation}>
+            <ul className={styles.navList}>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-philosophy">Our Philosophy</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-interdisciplinary-approach">Our Interdisciplinary Approach</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-team">Our Team</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-collaborators">Our Collaborators</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-advisory-boards">Advisory Boards</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/medsmart-games">The Games</a></li>
+              <li><a href="https://pharmacy.uky.edu/wonders-pharmacy">The Wonders of Pharmacy</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/mim">Movement is Medicine</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-research-action">Research in Action</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-lab-publications">Publications</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/youth-research-opportunities">Research Opportunities</a></li>
+              <li><a href="https://pharmacy.uky.edu/crome/crome-lab-news">News</a></li>
+
+            </ul>
+          </nav>
+        </section>
+
+        {/* Vision Section */}
+        <section id="mission" className="section">
+          <div className="container">
+            <h2 className="section-title">Vision Statement</h2>
+            <p className={styles.visionText}>
+              Our vision is to build a thriving community of collaboration, excellence, innovation & leadership.
+            </p>
+          </div>
         </section>
 
         {/* Mission Section */}
@@ -54,21 +81,25 @@ export default function Home() {
             </p>
             <div className={styles.coresGrid}>
               <div className={styles.coreCard}>
-                <h3>Medication Safety</h3>
+                <h3>Medication & Vaping Safety Interventions</h3>
                 <p>Promoting safe medication practices through education and intervention programs.</p>
               </div>
               <div className={styles.coreCard}>
                 <h3>Game-Based Learning</h3>
                 <p>Developing serious games to engage users in health education and behavior change.</p>
               </div>
+              {/*               <div className={styles.coreCard}>
+                <h3>Culturally-centered Complementary and Alternative Medicine</h3>
+                <p>C-CAM</p>
+              </div> */}
               <div className={styles.coreCard}>
                 <h3>Cancer Education and Literacy</h3>
                 <p>Educating communities about cancer prevention and early detection strategies.</p>
               </div>
-{/*               <div className={styles.coreCard}>
+              <div className={styles.coreCard}>
                 <h3>Cystic Fibrosis and Medication Management</h3>
                 <p>Supporting families managing complex medication regimens for chronic conditions.</p>
-              </div> */}
+              </div>
             </div>
           </div>
         </section>

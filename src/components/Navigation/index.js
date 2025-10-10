@@ -11,7 +11,7 @@ export default function Navigation() {
   const [activeDropdown, setActiveDropdown] = useState(null)
 
   const navItems = [
-    { href: 'https://pharmacy.uky.edu/crome/crome-team', label: 'The Team' },
+    // { href: 'https://pharmacy.uky.edu/crome/crome-team', label: 'The Team' },
     {
       href: '/medsmart',
       label: 'MedSMA℞T Game',

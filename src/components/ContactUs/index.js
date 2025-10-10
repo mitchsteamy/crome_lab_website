@@ -14,14 +14,14 @@ export default function ContactUs() {
         <p className={styles.address}>
           University of Kentucky<br/>
           College of Pharmacy<br/>
-          Room 2515, Rennebohm Hall<br/>
+          Room 292, Lee T. Todd, Jr. Building<br/>
           789 S Limestone, Lexington, KY 40508
         </p>
         <p className={styles.contact}>
-          Phone: <a href="tel:608-263-4498" className={styles.link}>608-263-4498</a><br/>
-          Fax: <a href="tel:608-262-5262" className={styles.link}>608-262-5262</a><br/>
-          <a href="mailto:crome@pharmacy.wisc.edu" className={styles.link}>crome@pharmacy.wisc.edu</a><br/>
-          <a href="https://twitter.com/CRoMELabUW" className={styles.socialLink} aria-label="Follow us on Twitter">
+          Phone: <a href="tel:859-323-7601" className={styles.link}>(859) 323-7601</a><br/>
+          {/* Fax: <a href="tel:608-262-5262" className={styles.link}>608-262-5262</a><br/> */}
+          <a href="mailto:crome.lab@uky.edu" className={styles.link}>crome.lab@uky.edu</a><br/>
+          <a href="https://x.com/UK_COP" className={styles.socialLink} aria-label="Follow us on Twitter">
             <svg 
               width="24" 
               height="24" 
