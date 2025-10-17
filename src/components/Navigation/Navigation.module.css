@@ -1,7 +1,7 @@
 /* src/components/Navigation/Navigation.module.css */
 .navigation {
   background: linear-gradient(135deg, #f8a14b 0%, #f78b33 100%);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,6 +20,10 @@
 .brand {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.brandLogo {
+  margin-bottom: -4px;
 }
 
 .brandText {
@@ -88,7 +92,7 @@
 }
 
 .dropdown::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 50%;
@@ -161,7 +165,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .navListOpen {

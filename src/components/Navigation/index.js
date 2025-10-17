@@ -49,6 +49,9 @@ export default function Navigation() {
         { href: '/outsmart#funding', label: 'Funding Support' }
       ]
     },
+    { href: 'https://pharmacy.uky.edu/wonders-pharmacy', label: 'The Wonders of Pharmacy' },
+    { href: 'https://pharmacy.uky.edu/crome/mim', label: 'Movement is Medicine' },
+    { href: 'https://pharmacy.uky.edu/crome/crome-research-action', label: 'Research in Action' },
   ]
 
   const handleMouseEnter = (index) => {
@@ -85,9 +88,6 @@ export default function Navigation() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
         </button>
 
         <ul className={`${styles.navList} ${isMenuOpen ? styles.navListOpen : ''}`}>

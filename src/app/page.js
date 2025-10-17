@@ -10,7 +10,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroLogoContainer}>
             <Image
-              src="/images/CRoME-logo-full-color_500x170.png"
+              src="/images/CRoME-lab-logo_2000x680.png"
               alt="CRoME Lab Logo"
               width={500}
               height={170}
@@ -21,7 +21,7 @@ export default function Home() {
           <p className={styles.heroSubtitle}>
             Community-Engaged Research in Medication Education
           </p>
-          <p className={styles.heroDescription}>
+          <p className={styles.heroDescription}> 
             Developing novel methods for improving medication safety and health behaviors
             for vulnerable and underserved populations
           </p>
@@ -33,9 +33,6 @@ export default function Home() {
               <li><a href="https://pharmacy.uky.edu/crome/crome-collaborators">Our Collaborators</a></li>
               <li><a href="https://pharmacy.uky.edu/crome/crome-advisory-boards">Advisory Boards</a></li>
               <li><a href="https://pharmacy.uky.edu/crome/medsmart-games">The Games</a></li>
-              <li><a href="https://pharmacy.uky.edu/wonders-pharmacy">The Wonders of Pharmacy</a></li>
-              <li><a href="https://pharmacy.uky.edu/crome/mim">Movement is Medicine</a></li>
-              <li><a href="https://pharmacy.uky.edu/crome/crome-research-action">Research in Action</a></li>
               <li><a href="https://pharmacy.uky.edu/crome/crome-lab-publications">Publications</a></li>
               <li><a href="https://pharmacy.uky.edu/crome/youth-research-opportunities">Research Opportunities</a></li>
               <li><a href="https://pharmacy.uky.edu/crome/crome-lab-news">News</a></li>
