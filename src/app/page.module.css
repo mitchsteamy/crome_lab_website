@@ -10,7 +10,7 @@
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #061336 0%, #061336 100%); 
+  background: linear-gradient(135deg, #061336 0%, #061336 100%);
   padding: 100px 0 75px 0;
   color: white;
   text-align: center;
@@ -30,14 +30,13 @@
 
 .heroLogo {
   height: auto;
-  max-width: 100%;
+  max-width: 90%;
   filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
   border-radius: 16px;
 }
 
 .navigation {
   margin-top: 60px;
-
 }
 
 .navList {
@@ -106,8 +105,10 @@
 
 .coresGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .coreCard {
@@ -133,6 +134,31 @@
 .coreCard p {
   color: #666;
   line-height: 1.6;
+}
+
+/* Upside-down pyramid responsive breakpoints */
+@media (max-width: 1400px) {
+  .coresGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .coresGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .coresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .coresGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Collaboration Section */

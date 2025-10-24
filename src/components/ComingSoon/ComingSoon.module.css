@@ -1,0 +1,228 @@
+/* src/components/ComingSoon/ComingSoon.module.css */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #061336 0%, #0a1a4a 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.content {
+  text-align: center;
+  z-index: 10;
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.logoContainer {
+  margin-bottom: 30px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.logo {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #061336;
+  margin-bottom: 10px;
+  animation: fadeInDown 0.8s ease-out 0.2s backwards;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  font-weight: 400;
+  animation: fadeInDown 0.8s ease-out 0.4s backwards;
+}
+
+.comingSoonBox {
+  background: linear-gradient(135deg, #f8a14b 0%, #f78b33 100%);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+.comingSoonText {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.8;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.socialLinks {
+  margin-bottom: 30px;
+  animation: fadeInUp 0.8s ease-out 0.8s backwards;
+}
+
+.homeButton {
+  display: inline-block;
+  background-color: #061336;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.homeButton:hover {
+  background-color: #f78b33;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(247, 139, 51, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  color: #999;
+  font-size: 0.9rem;
+  animation: fadeIn 1s ease-out 1s backwards;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Animated background circles */
+.backgroundCircle1,
+.backgroundCircle2,
+.backgroundCircle3 {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(247, 139, 51, 0.1);
+  animation: float 20s ease-in-out infinite;
+}
+
+.backgroundCircle1 {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.backgroundCircle2 {
+  width: 300px;
+  height: 300px;
+  bottom: -50px;
+  left: -50px;
+  animation-delay: 5s;
+}
+
+.backgroundCircle3 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 10%;
+  animation-delay: 10s;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  33% {
+    transform: translateY(-30px) translateX(30px);
+  }
+  66% {
+    transform: translateY(30px) translateX(-30px);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .content {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .comingSoonText {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .comingSoonBox {
+    padding: 30px 20px;
+  }
+
+  .homeButton {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .backgroundCircle1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .backgroundCircle2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .backgroundCircle3 {
+    width: 150px;
+    height: 150px;
+  }
+}

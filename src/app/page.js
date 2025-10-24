@@ -21,7 +21,7 @@ export default function Home() {
           <p className={styles.heroSubtitle}>
             Community-Engaged Research in Medication Education
           </p>
-          <p className={styles.heroDescription}> 
+          <p className={styles.heroDescription}>
             Developing novel methods for improving medication safety and health behaviors
             for vulnerable and underserved populations
           </p>
@@ -85,10 +85,10 @@ export default function Home() {
                 <h3>Game-Based Learning</h3>
                 <p>Developing serious games to engage users in health education and behavior change.</p>
               </div>
-              {/*               <div className={styles.coreCard}>
-                <h3>Culturally-centered Complementary and Alternative Medicine</h3>
-                <p>C-CAM</p>
-              </div> */}
+              <div className={styles.coreCard}>
+                <h3>C-CAM</h3>
+                <p>Culturally-centered Complementary and Alternative Medicine</p>
+              </div>
               <div className={styles.coreCard}>
                 <h3>Cancer Education and Literacy</h3>
                 <p>Educating communities about cancer prevention and early detection strategies.</p>
@@ -123,7 +123,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className={styles.projects}>
+{/*         <section id="projects" className={styles.projects}>
           <div className="container">
             <h2 className="section-title">Our Projects</h2>
             <div className={styles.projectsGrid}>
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   )

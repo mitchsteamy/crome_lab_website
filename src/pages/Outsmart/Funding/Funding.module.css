@@ -22,6 +22,7 @@
   color: #333;
   margin: 0;
   text-align: justify;
+  padding-bottom: 24px;
 }
 
 .topLink {
@@ -33,6 +34,7 @@
   padding: 8px 12px;
   border-radius: 4px;
   transition: all 0.3s ease;
+  margin-top: -24px;
 }
 
 .topLink:hover {

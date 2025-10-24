@@ -18,12 +18,24 @@
 }
 
 .brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .brandLogo {
-  margin-bottom: -4px;
+  height: auto;
+  max-height: 65px;
+  width: auto;
+  border-radius: 4px;
 }
 
 .brandText {
@@ -41,7 +53,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 30px;
+  gap: 15px;
 }
 
 .navItem {
@@ -51,12 +63,13 @@
 .navList li a {
   color: black;
   text-decoration: none;
-  font-weight: 500;
-  padding: 8px 16px;
+  font-weight: 400;
+  padding: 8px 12px;
   border-radius: 4px;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .navList li a:hover,
@@ -64,6 +77,43 @@
   background-color: rgba(255, 255, 255, 0.1);
   color: white !important;
   text-decoration: none;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+}
+
+/* Dropdown-only label (no href) */
+.dropdownOnlyLabel {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdownOnlyLabel:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 
 .dropdownArrow {
@@ -82,7 +132,7 @@
   background-color: #f78b33;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
+  min-width: 220px;
   z-index: 1001;
   margin-top: 0;
   opacity: 1;
@@ -115,7 +165,9 @@
 }
 
 .dropdownLink {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
   color: #000 !important;
   text-decoration: none;
@@ -127,7 +179,72 @@
 
 .dropdownLink:hover {
   background-color: #f8f9fa;
-  color: #007bff !important;
+  color: #061336 !important;
+}
+
+.externalIcon {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Nested dropdown styles */
+.nestedItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nestedItemContainer .dropdownLink {
+  flex: 1;
+  padding-right: 0;
+}
+
+.nestedArrowButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.nestedArrowButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nestedArrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  color: #000;
+}
+
+.nestedArrowExpanded {
+  transform: rotate(180deg);
+}
+
+.nestedSectionsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nestedSectionLink {
+  display: block;
+  padding: 8px 20px 8px 40px;
+  color: #000 !important;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.nestedSectionLink:hover {
+  background-color: #f8f9fa;
+  color: #061336 !important;
+  border-left-color: #061336;
 }
 
 .mobileToggle {
@@ -169,14 +286,16 @@
   }
 
   .navListOpen {
-    max-height: 500px;
+    max-height: 800px;
+    overflow-y: auto;
   }
 
   .navItem {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .navList li a {
+  .navList li a,
+  .dropdownOnlyLabel {
     display: block;
     padding: 15px 20px;
     border-radius: 0;
@@ -209,7 +328,43 @@
   .dropdownLink:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #f8f9fa !important;
-    transform: none;
+  }
+
+  /* Nested dropdown mobile styles */
+  .nestedItemContainer {
+    display: flex;
+  }
+
+  .nestedArrowButton {
+    padding: 15px 20px;
+  }
+
+  .nestedArrowButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nestedArrow {
+    color: white;
+  }
+
+  .nestedSectionsList {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nestedSectionLink {
+    color: white !important;
+    padding: 10px 20px 10px 60px;
+    font-size: 13px;
+  }
+
+  .nestedSectionLink:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #f8f9fa !important;
+    border-left-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nestedArrow {
+    display: none;
   }
 
   .container {

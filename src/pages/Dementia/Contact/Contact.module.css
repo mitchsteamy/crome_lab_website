@@ -1,5 +1,5 @@
-/* src/components/Funding/Funding.module.css */
-.funding {
+/* src/components/Contact/Contact.module.css */
+.contact {
   padding: 40px 0;
 }
 
@@ -12,17 +12,30 @@
   font-weight: 700;
 }
 
-.fundingInfo {
+.contactInfo {
+  border-radius: 8px;
   margin-bottom: 40px;
 }
 
-.fundingInfo p {
+.contactInfo p {
   font-size: 16px;
   line-height: 1.7;
   color: #333;
-  margin: 0;
+  margin-bottom: 20px;
   text-align: justify;
-  margin-bottom: 24px;
+}
+
+.contactInfo p:last-child {
+  margin-bottom: 0;
+}
+
+.contactInfo a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
 }
 
 .topLink {
@@ -47,11 +60,11 @@
     font-size: 2rem;
   }
   
-  .fundingInfo {
+  .contactInfo {
     padding: 20px;
   }
   
-  .fundingInfo p {
+  .contactInfo p {
     text-align: left;
   }
 }

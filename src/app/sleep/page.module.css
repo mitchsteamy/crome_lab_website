@@ -1,0 +1,21 @@
+.container {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Smooth scrolling for navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+.main > section {
+  margin-bottom: 60px;
+  padding-top: 20px;
+}

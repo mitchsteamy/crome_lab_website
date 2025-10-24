@@ -1,5 +1,5 @@
-/* src/components/About/About.module.css */
-.about {
+/* src/components/Funding/Funding.module.css */
+.funding {
   padding: 40px 0;
 }
 
@@ -12,22 +12,15 @@
   font-weight: 700;
 }
 
-.subsection {
+.fundingInfo {
   margin-bottom: 40px;
 }
 
-.subsection h3 {
-  font-size: 1.75rem;
-  color: #495057;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.subsection p {
+.fundingInfo p {
   font-size: 16px;
   line-height: 1.7;
   color: #333;
-  margin-bottom: 15px;
+  margin: 0;
   text-align: justify;
 }
 
@@ -53,11 +46,11 @@
     font-size: 2rem;
   }
   
-  .subsection h3 {
-    font-size: 1.5rem;
+  .fundingInfo {
+    padding: 20px;
   }
   
-  .subsection p {
+  .fundingInfo p {
     text-align: left;
   }
 }

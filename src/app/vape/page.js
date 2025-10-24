@@ -7,19 +7,21 @@ import Resources from '@/pages/Outsmart/Resources'
 import Publications from '@/pages/Outsmart/Publications'
 import Contact from '@/pages/Outsmart/Contact'
 import Funding from '@/pages/Outsmart/Funding'
+import ComingSoon from '@/components/ComingSoon'
 
-export default function OutSMART() {
+export default function Vape() {
   return (
     <div className={styles.container}>
-      <Header />
-      <main className={styles.main}>
-        <About />
+      {/*   <Header />
+      <main className={styles.main}>*/}
+      <ComingSoon />
+      {/*         <About />
         <Media />
         <Resources />
         <Publications />
         <Contact />
-         <Funding />
-      </main>
+         <Funding /> 
+      </main>*/}
     </div>
   )
 }

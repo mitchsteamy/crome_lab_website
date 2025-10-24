@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "firebase deploy --only hosting"
+
   },
   "dependencies": {
     "react": "19.1.0",

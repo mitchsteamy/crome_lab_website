@@ -1,5 +1,5 @@
-/* src/components/Funding/Funding.module.css */
-.funding {
+/* src/components/About/About.module.css */
+.about {
   padding: 40px 0;
 }
 
@@ -12,17 +12,44 @@
   font-weight: 700;
 }
 
-.fundingInfo {
+.subsection {
   margin-bottom: 40px;
 }
 
-.fundingInfo p {
+.subsection h3 {
+  font-size: 1.75rem;
+  color: #495057;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.subsection p {
   font-size: 16px;
   line-height: 1.7;
   color: #333;
-  margin: 0;
+  margin-bottom: 15px;
   text-align: justify;
-  margin-bottom: 24px;
+}
+
+.goalsList {
+  margin: 25px 0;
+}
+
+.goalsList p {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.goalsList ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.goalsList li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 8px;
 }
 
 .topLink {
@@ -47,11 +74,11 @@
     font-size: 2rem;
   }
   
-  .fundingInfo {
-    padding: 20px;
+  .subsection h3 {
+    font-size: 1.5rem;
   }
   
-  .fundingInfo p {
+  .subsection p {
     text-align: left;
   }
 }

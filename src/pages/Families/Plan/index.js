@@ -52,7 +52,7 @@ export default function Plan() {
           We hope a Personalized Family Medication Safety Plan will make family members be more aware of using 
           medications safety and responsibility to achieve positive health outcomes. If you would like more 
           information about the Family Medication Safety Plan, please our please contact our Research Coordinator 
-          by email: <a href="mailto:crome@pharmacy.wisc.edu">crome@pharmacy.wisc.edu</a>.
+          by email: <a href="mailto:crome.lab@uky.edu">crome.lab@uky.edu</a>.
         </p>
       </div>
 

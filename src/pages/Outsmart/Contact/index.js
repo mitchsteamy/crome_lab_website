@@ -8,15 +8,15 @@ export default function Contact() {
       
       <div className={styles.contactInfo}>
         <p>
-          If you have questions about this research, please contact the Principal Investigator, Dr. Olufunmilola Abraham by email: <a href="mailto:olufunmilola.abraham@wisc.edu">olufunmilola.abraham@wisc.edu</a>.
+          If you have questions about this research, please contact the Principal Investigator, Dr. Olufunmilola Abraham by email: <a href="mailto:Olufunmilola.Abraham@uky.edu">Olufunmilola.Abraham@uky.edu</a>.
         </p>
         
         <p>
-          If you have questions about the <a href="https://pharmacy.wisc.edu/crometeam/" target="_blank" rel="noopener noreferrer">CRoME Lab</a>, our studies, becoming a participant, or want to join the team, please contact the Research Coordinator by email: <a href="mailto:crome@pharmacy.wisc.edu">crome@pharmacy.wisc.edu</a>.
+          If you have questions about the <a href="https://pharmacy.uky.edu/crome" target="_blank" rel="noopener noreferrer">CRoME Lab</a>, our studies, becoming a participant, or want to join the team, please contact the Research Coordinator by email: <a href="mailto:crome.lab@uky.edu">crome.lab@uky.edu</a>.
         </p>
         
         <p>
-          The CRoME Lab's mission is to develop, implement, and disseminate novel methods for improving medication safety and health behaviors for vulnerable and underserved populations, while training the next generation of researchers. Projects within the CRoME research core share the common goal of applying community-engaged, collaborative, and transdisciplinary approaches to improving medication use and health outcomes for families through education, prevention, and intervention programs. For more information, please visit our website: <a href="https://pharmacy.wisc.edu/crometeam/" target="_blank" rel="noopener noreferrer">https://pharmacy.wisc.edu/crometeam/</a>
+          The CRoME Lab's mission is to develop, implement, and disseminate novel methods for improving medication safety and health behaviors for vulnerable and underserved populations, while training the next generation of researchers. Projects within the CRoME research core share the common goal of applying community-engaged, collaborative, and transdisciplinary approaches to improving medication use and health outcomes for families through education, prevention, and intervention programs. For more information, please visit our website: <a href="https://pharmacy.uky.edu/crome/" target="_blank" rel="noopener noreferrer">https://pharmacy.uky.edu/crome/</a>
         </p>
       </div>
 

@@ -21,7 +21,7 @@ export default function ContactUs() {
           Phone: <a href="tel:859-323-7601" className={styles.link}>(859) 323-7601</a><br/>
           {/* Fax: <a href="tel:608-262-5262" className={styles.link}>608-262-5262</a><br/> */}
           <a href="mailto:crome.lab@uky.edu" className={styles.link}>crome.lab@uky.edu</a><br/>
-          <a href="https://x.com/UK_COP" className={styles.socialLink} aria-label="Follow us on Twitter">
+          <a href="https://x.com/CRoMELabUK" className={styles.socialLink} aria-label="Follow us on Twitter">
             <svg 
               width="24" 
               height="24" 

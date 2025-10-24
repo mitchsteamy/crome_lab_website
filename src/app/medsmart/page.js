@@ -9,7 +9,7 @@ import Publications from '@/pages/Medsmart/Publications'
 import Contact from '@/pages/Medsmart/Contact'
  import Funding from '@/pages/Medsmart/Funding'
 
-export default function Home() {
+export default function MedSMART() {
   return (
     <div className={styles.container}>
       <Header />

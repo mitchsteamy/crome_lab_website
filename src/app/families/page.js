@@ -5,10 +5,10 @@ import About from '@/pages/Families/About'
 import Plan from '@/pages/Families/Plan'
 import Resources from '@/pages/Families/Resources'
 import News from '@/pages/Families/News'
-import Contact from '@/pages/Families/About'
-import Funding from '@/pages/Families/About'
+import Contact from '@/pages/Families/Contact'
+import Funding from '@/pages/Families/Funding'
 
-export default function Home() { 
+export default function Familie() { 
   return (
     <div className={styles.container}>
       <Header />
